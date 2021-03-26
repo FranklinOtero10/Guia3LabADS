@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "ListaGeneros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><b>Lista de Géneros</b></h2>
+
+<ul class="list-group">
+    <li class="list-group-item">@Html.ActionLink("Acción", "OrdenarPorGenero", "Peliculas", new {genero = "Accion" },null)</li>
+    <li class="list-group-item">@Html.ActionLink("Ciencia Ficción", "OrdenarPorGenero", "Peliculas", new { genero = "Ficcion" },null)</li>
+    <li class="list-group-item">@Html.ActionLink("Drama", "OrdenarPorGenero", "Peliculas", new { genero = "Drama" },null)</li>
+    <li class="list-group-item">@Html.ActionLink("Romance", "OrdenarPorGenero", "Peliculas", new { genero = "Romance" },null)</li>
+    <li class="list-group-item">@Html.ActionLink("Animación", "OrdenarPorGenero", "Peliculas", new { genero = "Animacion" },null)</li>
+    <li class="list-group-item">@Html.ActionLink("Suspenso", "OrdenarPorGenero", "Peliculas", new { genero = "Suspenso" },null)</li>
+    <li class="list-group-item">@Html.ActionLink("Aventura", "OrdenarPorGenero", "Peliculas", new { genero = "Aventura" },null)</li>
+</ul>
+

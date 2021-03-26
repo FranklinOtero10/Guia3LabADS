@@ -1,0 +1,30 @@
+﻿
+@model Cinema.Models.Pelicula
+
+@{
+    ViewBag.Title = "Aleatorias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Películas</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Género</th>
+        <th>Año de lanzamiento</th>
+        <th>Clasificación</th>
+    </tr>
+
+    <tr>
+        <td>@Model.id</td>
+        <td>@Model.nombre</td>
+        <td>@Model.Genero</td>
+        <td>@Model.AnioLanzamiento</td>
+        <td>@Model.Clasificacion</td>
+    </tr>
+</table>
+
+
+

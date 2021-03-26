@@ -1,0 +1,14 @@
+﻿@model Cinema.Models.Pelicula
+
+@{
+    ViewBag.Title = "indice";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><b><u>Opciones de Ordenamiento</u></b></h2>
+
+<ul>
+    <li>@Html.ActionLink("Ordenar por nombre","OrdenarPorNombre","Peliculas")</li>
+    <li>@Html.ActionLink("Ordenar por fecha", "AnioMes", "Peliculas")</li>
+    <li>@Html.ActionLink("Ordenar por género", "ListaGeneros", "Peliculas")</li>
+</ul>

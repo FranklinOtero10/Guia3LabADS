@@ -1,0 +1,29 @@
+﻿@model Cinema.Models.Cliente
+
+@{
+    ViewBag.Title = "ListaClientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de Clientes</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Número de télefono</th>
+        <th>DUI</th>
+        <th>Dirección</th>
+    </tr>
+
+    <tr>
+        <td>@Model.id</td>
+        <td>@Model.Nombre</td>
+        <td>@Model.edad</td>
+        <td>@Model.NumeroTelefono</td>
+        <td>@Model.DUI</td>
+        <td>@Model.Direccion</td>
+    </tr>
+</table>
+

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "AnioMes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><b>Buscar películas</b></h2><br />
+
+<form action="/Peliculas/OrdenarPorFecha" method="get">
+    <label>Digite el año</label>
+    <input type="text" id="anio" name="anio" placeholder="Ej/2020" />
+    <label>Digite el mes</label>
+    <input type="text"  id="mes" name="mes" placeholder="Ej/mayo"/><br />
+    <button type="submit" class="btn btn-success">Buscar</button>
+</form>
+

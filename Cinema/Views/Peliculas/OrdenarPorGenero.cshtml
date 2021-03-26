@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable<Cinema.Models.Pelicula>
+
+@{
+    ViewBag.Title = "OrdenarPorGenero";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><b>Películas por Género</b></h2><br/>
+<br />
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Año y mes de Lanzamiento</th>
+            <th>Clasificación</th>
+        </tr>
+    </thead>
+    @foreach (var i in Model)
+    {
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => i.id)</td>
+                <td>@Html.DisplayFor(modelItem => i.nombre)</td>
+                <td>@Html.DisplayFor(modelItem => i.Genero)</td>
+                <td>@Html.DisplayFor(modelItem => i.AnioLanzamiento) - @Html.DisplayFor(modelItem => i.Mes) </td>
+                <td>@Html.DisplayFor(modelItem => i.Clasificacion)</td>
+            </tr>
+        </tbody>
+    }
+</table>
+<a class="btn btn-primary" href="javascript:history.back()">Regresar</a>
+
